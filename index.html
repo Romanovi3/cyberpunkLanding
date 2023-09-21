@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="source/style.css">
+    <script src="source/script.js" defer></script>
     
     <title>CyberLanding</title>
 </head>
@@ -67,15 +68,15 @@
             </div>
             <div class="contest__block">
                 <div class="contest__block_form">
-                    <form action="#" method="get">
+                    <form action="/" method="get">
                         <input type="text" placeholder="Как тебя зовут?" id="name">
                         <input type="email" placeholder="Твой e-mail" id="email">
                         <div class="uploadScreenshot"> 
-                            <h4>Прикрепить скриншот</h4>
+                            <label for="uploadFile" id="labelForPlus">Прикрепить скриншот</label>
                             <p>.png / .jpg / .pdf </p>
-                            <input type="file" name="uploadFile" accept=".png , .jpg , .pdf">
+                            <input type="file" name="uploadFile" accept=".png , .jpg , .pdf" id="plusScreenshot">
                         </div>    
-                        <button type="submit" class="blackBtn formButton">Отправить</button>
+                        <button type=" " class="blackBtn formButton" id="formButton">Отправить</button>
                         <span>
                         <input type="checkbox" name="check" id="check">
                         <label for="check">Согласен на обработку персональных данных</label>

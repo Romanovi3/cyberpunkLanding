@@ -101,6 +101,11 @@
     text-decoration: none;
     color: #F8F200;;
   }
+  .blackBtn:hover{
+    border-radius: 15px;
+    box-shadow: 0 0 4px 2px rgb(5, 190, 236);
+    transition: 0.5s;
+  }
 
   /* Second page | Information block */
 
@@ -309,10 +314,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:5% 10%;
+    padding:10% 10% 5% 10%;
     margin-bottom:60px;
   }
-  .uploadScreenshot h4{
+  .uploadScreenshot label{
     color: #FFF;
     font-family: Roboto;
     font-size: 18px;
@@ -321,6 +326,8 @@
     line-height: normal;
     text-decoration-line: underline;
     margin-bottom: 0;
+    width: 82%;
+    text-align: center;
   }
   .uploadScreenshot p{
     color: #FFF;
@@ -337,11 +344,12 @@
     opacity: 0;
     cursor: pointer;
     position: absolute;
-    top: 0;
+    margin-top:5%;
   }
   .uploadScreenshot input::file-selector-button{
     border: none;
     cursor: pointer;
+    display: none;
   }
   #check{
     margin:0;
@@ -676,6 +684,12 @@
     .contest__texts p{
       padding:7%;
     }
+
+    /* contest block */
+
+    .uploadScreenshot input{
+      margin-top:15%;
+    }
     
     /* Sponsored Block */
 
@@ -824,6 +838,86 @@
     max-height: 100%;
     min-width: 320px;
     max-width: 100%;
+  }
+  /* Contest Block */
+
+  .contest{
+    width: 320px;
+    height: 1001px;
+    flex-shrink: 0;
+  }
+  .contest__texts {
+    width: 100%;
+    height: 400px; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding:0 12px;
+  }
+  .contest__texts h2{
+    width: 296px;
+    color: #FFF;
+    font-family: Archangelsk;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+  .contest__texts p {
+    background: url(../source/images/icons/smallStar.svg) no-repeat  center;
+    color: #F8F200;
+    font-family: Archangelsk;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding:10%;
+  }
+  .contest__texts_terms {
+    width: 296px;
+    height: 213px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    
+  }
+  .contest__texts_blue{
+    color: #52BEDC;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+  }
+ 
+  .contest__block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 381px;
+  }
+  .contest__block_consoles{
+    display: none;
+  }
+  .contest__block_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-left:0;
+    width: 87%;
+    height: 381px;
+    flex-shrink: 0;
+    margin-top: 70px 20px 200px 20px;
+  }
+  .contest__block_form form{
+    width: 296px;
   }
 
   /* Sponsored Block */
